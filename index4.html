@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIP Fan Membership</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#0a0a0a;
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:30px;
+    background:black;
+}
+
+h1{
+    color:#ffd700;
+}
+
+.container{
+    max-width:500px;
+    margin:40px auto;
+    padding:20px;
+    background:#111;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(255,215,0,0.2);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-size:14px;
+}
+
+input, select, textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:none;
+    border-radius:5px;
+    background:#222;
+    color:white;
+}
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#ffd700;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#ffcc00;
+}
+
+.note{
+    font-size:12px;
+    color:#aaa;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Justin Bieber VIP Membership</h1>
+    <p>Become an exclusive fan and unlock private access</p>
+</header>
+
+<div class="container">
+
+<!-- ✅ NETLIFY FORM STARTS HERE -->
+<form name="vip-membership" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="vip-membership">
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email Address</label>
+<input type="email" name="email" required>
+
+<label>Country</label>
+<input type="text" name="country" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone">
+
+<label>Select Membership Plan</label>
+<select name="plan" required>
+<option value="">Choose Plan</option>
+<option>Silver VIP</option>
+<option>Gold VIP</option>
+<option>Platinum VIP</option>
+</select>
+
+<label>Why do you want to join?</label>
+<textarea name="message" rows="4"></textarea>
+
+<button type="submit">Submit Application</button>
+
+<p class="note">
+After submitting, our team will contact you via email with payment instructions.
+</p>
+
+</form>
+<!-- ✅ NETLIFY FORM ENDS HERE -->
+
+</div>
+
+</body>
+</html>
